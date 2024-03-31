@@ -3,6 +3,7 @@
 ## 1 Mar31, 2024
 we looked into this design.
 > https://github.com/kentcdodds/kentcdodds.com
+> https://www.youtube.com/watch?v=g0HKvRj84Ak 
 
 For the first version, we decided to have 5 parts in the website, we will build the architecthure of the website, so that visitors can navigate between different parts (without seeing any content)
 1. **Main page**: a brief introduction to P.C.H + all the links to other parts + content updates for other parts + other links + global visitor map.
