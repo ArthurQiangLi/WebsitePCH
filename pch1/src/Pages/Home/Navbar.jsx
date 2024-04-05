@@ -1,24 +1,41 @@
-//import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 export default function Navbar() {
-  //const [isactive, SetIsActive] = useState(false);
-  return (
-    <>
-      <NavbarSegment target="home">{"About"}</NavbarSegment>
-      <NavbarSegment target="music">{"Music"}</NavbarSegment>
-      <NavbarSegment target="video">{"Video"}</NavbarSegment>
-    </>
-  );
-}
+  const [navActive, setNavActive] = useState(false);
 
-function NavbarSegment({ target, children }) {
+  const toggleNav = () => {
+    setNavActive(!navActive);
+  };
+
+  const closeMenu = () => {
+    setNavActive(false);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 500) {
+        closeMenu;
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (window.innerWidth <= 1200) {
+      closeMenu;
+    }
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar${navActive ? "active" : ""}`}>
       <div>
-        <Link to={target} smooth={true} duration={500} className="navbar-links">
-          {children}
-        </Link>
+        <img src="" alt="Logoipsum" />
       </div>
     </nav>
   );
