@@ -7,15 +7,14 @@ import Home from "./Pages/Home/Homescreen";
 export default function App() {
   return (
     <div className="App">
+      <Navbar />
       <Router>
         <div>
-          <Navbar />
           <Routes>
             <Route path="/" element={<Home />}></Route>
           </Routes>
         </div>
       </Router>
-      <Home />
     </div>
   );
 }

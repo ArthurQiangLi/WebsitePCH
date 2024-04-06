@@ -15,7 +15,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 500) {
-        closeMenu;
+        closeMenu();
       }
     };
 
@@ -28,15 +28,95 @@ export default function Navbar() {
 
   useEffect(() => {
     if (window.innerWidth <= 1200) {
-      closeMenu;
+      closeMenu();
     }
   }, []);
 
   return (
     <nav className={`navbar${navActive ? "active" : ""}`}>
-      <div>
-        <img src="" alt="Logoipsum" />
+      {/* <div>
+        <img src="./img/logo.webp" alt="LogoPCH" />
+      </div> */}
+      <a
+        className={`nav__hamburger ${navActive ? "active" : ""}`}
+        onClick={toggleNav}
+      >
+        <span className="nav_hamburger_line"></span>
+        <span className="nav_hamburger_line"></span>
+        <span className="nav_hamburger_line"></span>
+      </a>
+      <div className={`navbar--items ${navActive ? "active" : ""}`}>
+        <ul>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navBar--acitve-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="Courses"
+              className="navbar--content"
+            >
+              Courses
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="Lessons"
+              className="navbar--content"
+            >
+              Lessons
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="Postboard"
+              className="navbar--content"
+            >
+              Postboard
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="Music"
+              className="navbar--content"
+            >
+              Music
+            </Link>
+          </li>
+        </ul>
       </div>
+      <Link
+        onClick={closeMenu}
+        activeClass="navbar--active-content"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        to="Contact"
+        className="btn btn-outline-primary"
+      >
+        Contact Me
+      </Link>
     </nav>
   );
 }
