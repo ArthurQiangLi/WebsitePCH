@@ -5,6 +5,10 @@ export default function Music() {
       <section id="Music" className="musicplayer--section">
         <img src="./img/placeholder1.png" alt="musiclist" />
       </section>
+      <p>music</p>
+      <section className="musicplayer--section">
+        <img src="./img/placeholder1.png" alt="musiclist" />
+      </section>
     </>
   );
 }

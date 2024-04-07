@@ -41,16 +41,16 @@ export default function Navbar() {
         className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={toggleNav}
       >
-        <span className="nav_hamburger_line"></span>
-        <span className="nav_hamburger_line"></span>
-        <span className="nav_hamburger_line"></span>
+        <span className="nav__hamburger__line"></span>
+        <span className="nav__hamburger__line"></span>
+        <span className="nav__hamburger__line"></span>
       </a>
       <div className={`navbar--items ${navActive ? "active" : ""}`}>
         <ul>
           <li>
             <Link
               onClick={closeMenu}
-              activeClass="navBar--acitve-content"
+              activeClass="navbar--active-content"
               spy={true}
               smooth={true}
               offset={-70}
