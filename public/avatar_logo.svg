@@ -1,0 +1,13 @@
+
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="512" cy="512" r="512" fill="#c00000" />
+    <!-- Face Outline -->
+    <ellipse cx="512" cy="550" rx="250" ry="350" fill="#d1a689" />
+    <!-- Suit -->
+    <rect x="286" y="700" width="450" height="324" fill="#0a0a0a" />
+    <!-- Shirt -->
+    <polygon points="411,700 613,700 512,1024" fill="#ffffff" />
+    <!-- Smile - Just a simple curve to represent the smile -->
+    <path d="M361,600 q75,50 150,0" stroke="#f2e0ce" stroke-width="10" fill="none" />
+</svg>
