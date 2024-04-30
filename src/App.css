@@ -2,5 +2,9 @@
   width: 40px; /* Set the width of the avatar */
   height: 40px; /* Set the height of the avatar */
   border-radius: 50%; /* Make the border-radius 50% to create a circle */
-  padding: 2px;
+  margin-right: 20px;
+}
+
+.nav-link {
+  margin-right: 40px; /* Adjust the space as needed */
 }
