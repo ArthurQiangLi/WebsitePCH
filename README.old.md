@@ -7,7 +7,11 @@ Members:
 1. Arthur
 2. Sylvia
 
-react install
+## Paul’s examples
+
+    1. https://englishwithlucy.com/
+    2. https://www.teacherstefano.com/
+    3. https://rachelsenglish.com/
 
 ## Router
 

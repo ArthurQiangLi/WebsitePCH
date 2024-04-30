@@ -1,11 +1,11 @@
 import CompNavbar from "./CompNavbar";
 
-export default function Courses() {
+export default function Postboard() {
   return (
     <>
       <CompNavbar />
 
-      <h2>Courses</h2>
+      <h2>Postboard</h2>
     </>
   );
 }

@@ -20,15 +20,25 @@ function CompNavbar() {
           <img alt="logo" src="avator.png" className="avator" />
           Paul-US-English
         </Navbar.Brand>
-        <Nav className="navbar">
+        <Nav className="me-auto">
           <Nav.Link as={Link} to="/">
             Home
           </Nav.Link>
-          <Nav.Link as={Link} to={"/courses"}>
+          <Nav.Link
+            as={Link}
+            to={
+              "https://englishwithlucy.teachable.com/courses/?_gl=1*1c10mob*_ga*NzI1OTAyODUxLjE3MTQ0Mjk4Mzg.*_ga_WX2PF7BRC0*MTcxNDUwODQxNy4yLjEuMTcxNDUxMDg1MC4wLjAuMjA2NjkzNDMwOA..*_fplc*THIxRCUyRlIzRzlJT1RDVnRkJTJGU0liSElwJTJGTWp1WmF5VGpvRHJhNE15WExZSzN5YnIyJTJCSnZ4aVIxZnRQYnhjZllwZlNwaEhBWGVPUFd0UVlUQUg3RjE3djhGNkwlMkJ5RXFERkZkYXBpJTJCYW1PZEJVVjNmdUZGcWN2bndsWHNOT3F3JTNEJTNE"
+            }>
             Courses
           </Nav.Link>
           <Nav.Link as={Link} to={"/lessons"}>
             Lessons
+          </Nav.Link>{" "}
+          <Nav.Link as={Link} to={"/postboard"}>
+            Postboard
+          </Nav.Link>{" "}
+          <Nav.Link as={Link} to={"/aboutme"}>
+            AboutMe
           </Nav.Link>
         </Nav>
 
