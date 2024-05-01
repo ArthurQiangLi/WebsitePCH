@@ -25,3 +25,12 @@ One hour tutorial:[https://reactrouter.com/en/6.23.0/start/tutorial]
 
 More newer version
 [https://www.youtube.com/watch?v=oTIJunBa6MA]
+
+## Map
+
+syncfusion: [https://www.youtube.com/watch?v=EHEfv0x6XtU]
+
+`npm install react-leaflet leaflet`
+[https://react-leaflet.js.org/]
+
+[https://jvectormap.com/tutorials/getting-started/]

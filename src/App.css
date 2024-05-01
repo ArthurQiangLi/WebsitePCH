@@ -754,7 +754,28 @@ input[type="checkbox"] {
 /* =============================================== */
 
 /* =============================================== */
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
+  margin: 40px 40px 40px 40px;
+  max-height: 600px;
+  border-radius: 10px; /* Border radius */
+  overflow: hidden; /* Ensure child elements don't overflow */
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.697);
+}
+
+.leaflet-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  width: 100vw;
+  height: 100vh;
+}
 /* =============================================== */
 
 .avator {

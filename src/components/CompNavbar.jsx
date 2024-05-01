@@ -16,7 +16,7 @@ function CompNavbar() {
   return (
     <Navbar bg="light" data-bs-theme="light">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img alt="logo" src="avator.png" className="avator" />
           Paul-US-English
         </Navbar.Brand>

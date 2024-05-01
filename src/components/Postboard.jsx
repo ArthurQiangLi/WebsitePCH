@@ -1,14 +1,32 @@
 import CompFooter from "./CompFooter";
 import CompNavbar from "./CompNavbar";
 import data from "./data.json";
+import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
+import "../App.css";
 
 export default function Postboard() {
   return (
     <>
       <CompNavbar />
+      <Maps />
       <Posts />
       <CompFooter />
     </>
+  );
+}
+
+function Maps() {
+  return (
+    <div className="map-container ">
+      <MapContainer center={[51.505, -0.09]} zoom={2} scrollWheelZoom={false}>
+        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+        <Marker position={[51.505, -0.09]}>
+          <Popup>
+            A pretty CSS3 popup. <br /> Easily customizable.
+          </Popup>
+        </Marker>
+      </MapContainer>
+    </div>
   );
 }
 
