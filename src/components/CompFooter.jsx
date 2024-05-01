@@ -31,7 +31,7 @@ export default function CompFooter() {
                 duration={500}
                 to="MyPortfolio"
                 className="text-md">
-                Portfolio
+                Courses
               </Link>
             </li>
             <li>
@@ -67,7 +67,7 @@ export default function CompFooter() {
                 duration={500}
                 to="testimonial"
                 className="text-md">
-                Testimonials
+                Feedback
               </Link>
             </li>
           </ul>
