@@ -15,16 +15,38 @@ export default function Postboard() {
   );
 }
 
+const markers = [
+  { id: 1, position: [43, -80], content: "Popup 1: Content here" },
+  { id: 2, position: [36, -95.1], content: "Popup 2: More content here" },
+  { id: 3, position: [36, 127], content: "Popup 3: Even more content" },
+  { id: 4, position: [36, 139], content: "Popup 3: Even more content" },
+  { id: 5, position: [46, 102], content: "Popup 3: Even more content" },
+  { id: 6, position: [36, 127], content: "Popup 3: Even more content" },
+  { id: 7, position: [32, 101], content: "Popup 3: Even more content" },
+  { id: 8, position: [22, 110], content: "Popup 3: Even more content" },
+  { id: 9, position: [40, -1.9], content: "Popup 3: Even more content" },
+  { id: 10, position: [36, 128], content: "Popup 3: Even more content" },
+  { id: 11, position: [39, -8], content: "Popup 3: Even more content" },
+  { id: 12, position: [41, 14], content: "Popup 3: Even more content" },
+  { id: 13, position: [-4, -55], content: "Popup 3: Even more content" },
+  { id: 14, position: [0, -71], content: "Popup 3: Even more content" },
+  { id: 15, position: [48, 30], content: "Popup 3: Even more content" },
+  { id: 16, position: [15, 108], content: "Popup 3: Even more content" },
+  { id: 17, position: [40, 117], content: "Popup 3: Even more content" },
+
+  // Add more markers as needed
+];
+
 function Maps() {
   return (
     <div className="map-container ">
       <MapContainer center={[51.505, -0.09]} zoom={2} scrollWheelZoom={false}>
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        <Marker position={[51.505, -0.09]}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker>
+        {markers.map((maker) => (
+          <Marker key={maker.id} position={maker.position}>
+            <Popup>{maker.content}</Popup>
+          </Marker>
+        ))}
       </MapContainer>
     </div>
   );
